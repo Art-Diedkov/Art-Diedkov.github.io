@@ -1,0 +1,17 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = F}
+suppressPackageStartupMessages(library(leaflet))
+
+leaflet()%>%
+  setView(lat = 1.3503286, lng = 103.855772, zoom = 11) %>%
+  addProviderTiles(providers$OpenStreetMap.Mapnik)
+
+
+```
