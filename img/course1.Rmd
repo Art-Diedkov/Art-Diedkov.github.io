@@ -6,6 +6,12 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+```{r, comment='', echo=F, include=F}
+time <- Sys.time()
+```
+<h3>Map was created on: `r time`</h3>
+
 ```{r, echo = F}
 suppressPackageStartupMessages(library(leaflet))
 
